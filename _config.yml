@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: "lemon's blog"
+name: "我的博客"
 # Short bio or description (displayed in the header)
 description: "个人技术公众号：程序员柠檬  分享编程资源 | 学习路线"
 
@@ -39,11 +39,11 @@ footer-links:
   #weibo: frommidworld #请输入你的微博个性域名 https://www.weibo.com/<thispart>
   behance: # https://www.behance.net/<username>
   dribbble:
-  zhihu: ning-meng-cheng-31-94
-  email: llong87@163.com
+  zhihu: 
+  email: hdp5252@gmail.com
   facebook:
   flickr:
-  github: lemonchann 
+  github: hdp521 
   googleplus: # anything in your profile username that comes after plus.google.com/
   instagram:
   linkedin:
@@ -63,10 +63,10 @@ disqus: # fromendworld
 
 # Gitalk
 gitalk:
-  clientID: bd65d5c0df878155b7fa
-  clientSecret: d0220762c05c2d6b6f6152a0f0e4b6b090de9729
-  repo: lemonchann.github.io
-  owner: lemonchann
+  clientID: Ov23liCY00ClEnkTi6LQ
+  clientSecret: da3863a1dc98581c1822617c862aeaf7860bb9d9
+  repo: hdp521.github.io
+  owner: hdp521
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 #google_analytics: 
