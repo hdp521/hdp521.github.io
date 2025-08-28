@@ -144,7 +144,7 @@ proxies:
 
 - name: sa-ipv6
   type: vmess
-  server: [2603:c024:4503:6a00::1001]
+  server: 2603:c024:4503:6a00::1001
   port: 80
   uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
   alterId: 0
