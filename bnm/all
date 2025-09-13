@@ -1,0 +1,109 @@
+
+port: 7890
+allow-lan: true
+mode: Global
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+dns:
+  enable: false
+  listen: :53
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver: 
+    - 1.1.1.1
+    - 8.8.4.4
+    - 8.8.8.8
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  fallback:
+    - https://1.0.0.1/dns-query
+    - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+
+proxies:
+- name: sa
+  type: vmess
+  server: sa.vgegg.com
+  port: 80
+  uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: realname.1888.com.mo
+  ws-opts:
+    path: "/ws"
+    headers:
+      Host: realname.1888.com.mo
+
+- name: sa-云盘免流
+  type: vmess
+  server: sa.vgegg.com
+  port: 80
+  uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: f.pan.wo.cn
+  ws-opts:
+    path: "/ws"
+    headers:
+      Host: f.pan.wo.cn
+
+- name: vless-sa无加密不安全停用
+  type: vless
+  server: sa.vgegg.com
+  port: 80
+  uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: realname.1888.com.mo
+  ws-opts:
+    path: "/lws"
+    headers:
+      Host: realname.1888.com.mo
+
+- name: us-liu无加密不安全停用
+  type: vless
+  server: 129.146.217.171
+  port: 80
+  uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  network: ws
+  servername: realname.1888.com.mo
+  ws-opts:
+    path: "/lws"
+    headers:
+      Host: realname.1888.com.mo
+
+proxy-groups:
+- name: proxy
+  type: select
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+    - sa
+    - sa-云盘免流
+    - vless-sa无加密不安全停用
+    - us-liu无加密不安全停用
+
+rules:
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,proxy
+  - MATCH,proxy
