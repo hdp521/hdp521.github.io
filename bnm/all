@@ -30,7 +30,7 @@ dns:
 proxies:
 - name: sa
   type: vmess
-  server: sa.vgegg.com
+  server: 140.245.121.114
   port: 80
   uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
   alterId: 0
@@ -46,7 +46,7 @@ proxies:
 
 - name: sa-云盘免流
   type: vmess
-  server: sa.vgegg.com
+  server: 140.245.121.114
   port: 80
   uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
   alterId: 0
@@ -62,7 +62,7 @@ proxies:
 
 - name: vless-sa无加密不安全停用
   type: vless
-  server: sa.vgegg.com
+  server: 140.245.121.114
   port: 80
   uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
   alterId: 0
