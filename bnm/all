@@ -28,57 +28,9 @@ dns:
       - 240.0.0.0/4
 
 proxies:
-- name: sa
-  type: vmess
-  server: sa.vgegg.com
-  port: 80
-  uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: realname.1888.com.mo
-  ws-opts:
-    path: "/ws"
-    headers:
-      Host: realname.1888.com.mo
-
-- name: sa-云盘免流
-  type: vmess
-  server: sa.vgegg.com
-  port: 80
-  uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: f.pan.wo.cn
-  ws-opts:
-    path: "/ws"
-    headers:
-      Host: f.pan.wo.cn
-
 - name: vless-sa无加密不安全停用
   type: vless
   server: sa.vgegg.com
-  port: 80
-  uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  network: ws
-  servername: realname.1888.com.mo
-  ws-opts:
-    path: "/lws"
-    headers:
-      Host: realname.1888.com.mo
-
-- name: us-liu无加密不安全停用
-  type: vless
-  server: 129.146.217.171
   port: 80
   uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
   alterId: 0
@@ -98,10 +50,7 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-    - sa
-    - sa-云盘免流
     - vless-sa无加密不安全停用
-    - us-liu无加密不安全停用
 
 rules:
   - GEOIP,LAN,DIRECT
