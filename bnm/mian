@@ -38,11 +38,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: realname.1888.com.mo
+  servername: f.pan.wo.cn
   ws-opts:
     path: "/ws"
     headers:
-      Host: realname.1888.com.mo
+      Host: f.pan.wo.cn
 
 - name: sa-云盘免流
   type: vmess
@@ -70,11 +70,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: realname.1888.com.mo
+  servername: f.pan.wo.cn
   ws-opts:
     path: "/lws"
     headers:
-      Host: realname.1888.com.mo
+      Host: f.pan.wo.cn
 
 - name: us-liu无加密不安全停用
   type: vless
@@ -86,11 +86,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: realname.1888.com.mo
+  servername: f.pan.wo.cn
   ws-opts:
     path: "/lws"
     headers:
-      Host: realname.1888.com.mo
+      Host: f.pan.wo.cn
 
 proxy-groups:
 - name: proxy
