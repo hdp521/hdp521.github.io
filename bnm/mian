@@ -38,11 +38,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: f.pan.wo.cn
+  servername: pan.wo.cn
   ws-opts:
     path: "/ws"
     headers:
-      Host: f.pan.wo.cn
+      Host: pan.wo.cn
 
 - name: sa-云盘免流
   type: vmess
@@ -54,11 +54,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: f.pan.wo.cn
+  servername: pan.wo.cn
   ws-opts:
     path: "/ws"
     headers:
-      Host: f.pan.wo.cn
+      Host: pan.wo.cn
 
 - name: vless-sa无加密不安全停用
   type: vless
@@ -70,11 +70,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: f.pan.wo.cn
+  servername: pan.wo.cn
   ws-opts:
     path: "/lws"
     headers:
-      Host: f.pan.wo.cn
+      Host: pan.wo.cn
 
 - name: us-liu无加密不安全停用
   type: vless
@@ -86,11 +86,11 @@ proxies:
   udp: true
   tls: false
   network: ws
-  servername: f.pan.wo.cn
+  servername: pan.wo.cn
   ws-opts:
     path: "/lws"
     headers:
-      Host: f.pan.wo.cn
+      Host: pan.wo.cn
 
 proxy-groups:
 - name: proxy
