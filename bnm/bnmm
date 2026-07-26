@@ -238,6 +238,16 @@ proxies:
     headers:
       Host: realname.1888.com.mo
 
+- name: hysteria2-sa
+  type: hysteria2
+  server: hy2.vgegg.com
+  port: 8443
+  password: "179459579aA."
+  sni: hy2.vgegg.com
+  skip-cert-verify: false
+  udp: true
+
+
 proxy-groups:
 - name: 负载均衡
   type: load-balance
@@ -258,6 +268,7 @@ proxy-groups:
     - sn
     - vless-sa无加密不安全停用
     - us-liu无加密不安全停用
+    - hysteria2-sa
 
 - name: 自动选择
   type: url-test
@@ -279,6 +290,7 @@ proxy-groups:
     - sn
     - vless-sa无加密不安全停用
     - us-liu无加密不安全停用
+    - hysteria2-sa
 
 - name: 🌍选择代理
   type: select
@@ -300,7 +312,7 @@ proxy-groups:
     - sn
     - vless-sa无加密不安全停用
     - us-liu无加密不安全停用
-
+    - hysteria2-sa
 rules:
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
