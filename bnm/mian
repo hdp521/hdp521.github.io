@@ -111,7 +111,7 @@ proxy-groups:
     - sa-云盘免流
     - vless-sa无加密不安全停用
     - us-liu无加密不安全停用
-
+    - hysteria2-sa
 rules:
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,proxy
