@@ -92,6 +92,15 @@ proxies:
     headers:
       Host: pan.wo.cn
 
+- name: hysteria2-sa
+  type: hysteria2
+  server: hy2.vgegg.com
+  port: 8443
+  password: "179459579aA."
+  sni: hy2.vgegg.com
+  skip-cert-verify: false
+  udp: true
+
 proxy-groups:
 - name: proxy
   type: select
