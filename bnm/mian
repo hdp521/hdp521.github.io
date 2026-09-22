@@ -95,7 +95,8 @@ proxies:
 - name: hysteria2-sa
   type: hysteria2
   server: hy2.vgegg.com
-  port: 8443
+  port: 65513
+  ports: "65335-65535"
   password: "179459579aA."
   sni: hy2.vgegg.com
   skip-cert-verify: false
