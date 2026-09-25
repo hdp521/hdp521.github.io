@@ -504,5 +504,18 @@ proxy-groups:
 
 rules:
   - GEOIP,LAN,DIRECT
+# --- GitHub 专用代理规则（放在 GEOIP,CN 之前）---
+  - DOMAIN-SUFFIX,github.com,🌍选择代理
+  - DOMAIN-SUFFIX,githubusercontent.com,🌍选择代理
+  - DOMAIN-SUFFIX,github.io,🌍选择代理
+  - DOMAIN-SUFFIX,githubapp.com,🌍选择代理
+  - DOMAIN-KEYWORD,github,🌍选择代理
+  - DOMAIN-SUFFIX,github.blog,🌍选择代理
+  - DOMAIN-SUFFIX,github.community,🌍选择代理
+  - DOMAIN-SUFFIX,x.com,🌍选择代理
+  - DOMAIN-SUFFIX,twitter.com,🌍选择代理
+  - DOMAIN-KEYWORD,t.co,🌍选择代理
+  - DOMAIN-SUFFIX,twimg.com,🌍选择代理
+  - DOMAIN-KEYWORD,x.team,🌍选择代理
 #  - GEOIP,CN,DIRECT
   - MATCH,🌍选择代理
