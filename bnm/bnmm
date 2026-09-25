@@ -248,7 +248,161 @@ proxies:
   skip-cert-verify: false
   udp: true
 
+- name: Snippets-vless1
+  type: vless
+  server: www.shopify.com
+  port: 443
+  uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
+  udp: false
+  tls: true
+  network: ws
+  servername: bus.vgegg.com
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: bus.vgegg.com
 
+- name: Snippets-vless2
+  type: vless
+  server: mfa.gov.ua
+  port: 443
+  uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
+  udp: false
+  tls: true
+  network: ws
+  servername: bus.vgegg.com
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: bus.vgegg.com
+      
+- name: Snippets-vless3
+  type: vless
+  server: wsaas.sin.fan
+  port: 443
+  uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
+  udp: false
+  tls: true
+  network: ws
+  servername: bus.vgegg.com
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: bus.vgegg.com
+      
+- name: Snippets-vless4
+  type: vless
+  server: store.ubi.com
+  port: 443
+  uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
+  udp: false
+  tls: true
+  network: ws
+  servername: bus.vgegg.com
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: bus.vgegg.com
+
+- name: Snippets-vless5
+  type: vless
+  server: cf.130519.xyz
+  port: 443
+  uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
+  udp: false
+  tls: true
+  network: ws
+  servername: bus.vgegg.com
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: bus.vgegg.com
+
+- name: Snippets-vless6
+  type: vless
+  server: cf.008500.xyz
+  port: 443
+  uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
+  udp: false
+  tls: true
+  network: ws
+  servername: bus.vgegg.com
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: bus.vgegg.com
+      
+- name: Snippets-vless7
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
+  udp: false
+  tls: true
+  network: ws
+  servername: bus.vgegg.com
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: bus.vgegg.com
+      
+- name: Snippets-vless8
+  type: vless
+  server: cf.877774.xyz
+  port: 443
+  uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
+  udp: false
+  tls: true
+  network: ws
+  servername: bus.vgegg.com
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: bus.vgegg.com
+
+- name: Snippets-vless9
+  type: vless
+  server: cdns.doon.eu.org
+  port: 443
+  uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
+  udp: false
+  tls: true
+  network: ws
+  servername: bus.vgegg.com
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: bus.vgegg.com
+
+- name: Snippets-vless10
+  type: vless
+  server: sub.danfeng.eu.org
+  port: 443
+  uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
+  udp: false
+  tls: true
+  network: ws
+  servername: bus.vgegg.com
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: bus.vgegg.com
+      
+- name: Snippets-vless11
+  type: vless
+  server: cf.zhetengsha.eu.org
+  port: 443
+  uuid: 52fd6f1d-c10d-43dd-93f4-6c3426740b19
+  udp: false
+  tls: true
+  network: ws
+  servername: bus.vgegg.com
+  ws-opts:
+    path: "/?ed=2560"
+    headers:
+      Host: bus.vgegg.com
+
+      
 proxy-groups:
 - name: 负载均衡
   type: load-balance
@@ -270,6 +424,17 @@ proxy-groups:
     - vless-sa无加密不安全停用
     - us-liu无加密不安全停用
     - hysteria2-sa
+    - Snippets-vless1
+    - Snippets-vless2
+    - Snippets-vless3
+    - Snippets-vless4
+    - Snippets-vless5
+    - Snippets-vless6
+    - Snippets-vless7
+    - Snippets-vless8
+    - Snippets-vless9
+    - Snippets-vless10
+    - Snippets-vless11
 
 - name: 自动选择
   type: url-test
@@ -292,6 +457,17 @@ proxy-groups:
     - vless-sa无加密不安全停用
     - us-liu无加密不安全停用
     - hysteria2-sa
+    - Snippets-vless1
+    - Snippets-vless2
+    - Snippets-vless3
+    - Snippets-vless4
+    - Snippets-vless5
+    - Snippets-vless6
+    - Snippets-vless7
+    - Snippets-vless8
+    - Snippets-vless9
+    - Snippets-vless10
+    - Snippets-vless11
 
 - name: 🌍选择代理
   type: select
@@ -314,6 +490,18 @@ proxy-groups:
     - vless-sa无加密不安全停用
     - us-liu无加密不安全停用
     - hysteria2-sa
+    - Snippets-vless1
+    - Snippets-vless2
+    - Snippets-vless3
+    - Snippets-vless4
+    - Snippets-vless5
+    - Snippets-vless6
+    - Snippets-vless7
+    - Snippets-vless8
+    - Snippets-vless9
+    - Snippets-vless10
+    - Snippets-vless11
+
 rules:
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
